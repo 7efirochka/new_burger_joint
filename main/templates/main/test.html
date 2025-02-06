@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пицца Олимп - Костерево - Доставка пиццы, роллов, салатов</title>
+    <link rel="stylesheet" href="{% static 'main/css/test.css' %}">
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" >
+    <meta name="description" content="Закажите вкусную пиццу, роллы, салаты и другие блюда в Костерево с быстрой доставкой от Пицца Олимп. Акции, скидки, удобный онлайн заказ и оплата.">
+    <meta name="keywords" content="пицца, пицца костерево, доставка пиццы костерево, пицца олимп костерево, роллы, доставка роллов костерево, суши, доставка суши костерево, салаты, доставка салатов костерево, заказ пиццы, доставка еды костерево, еда на дом костерево">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/css/main.min.css?v=1709366547">
+    <link rel="stylesheet" href="/assets/css/custom.css?v=1709366547">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="header-block">
+        <header class="header">
+            <div class="container">
+                <div class="header__container">
+                    <a href="/kosterevo/" class="header__logo">
+                        <img src="" alt="Пицца Олимп">
+                    </a>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a href="/kosterevo/#menu">Меню</a></li>
+                            <li class="header__menu-item"><a href="/kosterevo/#actions">Акции</a></li>
+                            <li class="header__menu-item"><a href="/kosterevo/#contacts">Контакты</a></li>
+                            <li class="header__menu-item"><a href="/kosterevo/delivery/">Доставка и оплата</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__controls">
+                        <a href="tel:+79997184040" class="header__phone">+7 (999) 718-40-40</a>
+                        <button class="header__cart-btn js-open-cart">
+                            <span class="header__cart-count js-cart-count">0</span>
+                            <img src="" alt="Корзина">
+                        </button>
+                        <button class="header__menu-btn js-open-menu">
+                            <img src="" alt="Меню">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="menu-block">
+            <div class="menu">
+                <div class="menu__header">
+                    <a href="/kosterevo/" class="menu__logo">
+                        <img src="" alt="Пицца Олимп">
+                    </a>
+                    <button class="menu__close js-close-menu">
+                        <img src="" alt="Закрыть">
+                    </button>
+                </div>
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="/kosterevo/#menu">Меню</a></li>
+                        <li class="menu__item"><a href="/kosterevo/#actions">Акции</a></li>
+                        <li class="menu__item"><a href="/kosterevo/#contacts">Контакты</a></li>
+                        <li class="menu__item"><a href="/kosterevo/delivery/">Доставка и оплата</a></li>
+                    </ul>
+                </nav>
+                <div class="menu__footer">
+                    <a href="tel:+79997184040" class="menu__phone">+7 (999) 718-40-40</a>
+                    <div class="menu__soc">
+                        <a href="https://vk.com/pizzaolimp33" target="_blank"><img src="" alt="VK"></a>
+                        <a href="https://t.me/pizzaolimp33" target="_blank"><img src="" alt="Telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="promo promo-mini">
+            <div class="container">
+                <h1 class="promo__title">Пицца Олимп - Костерево</h1>
+            </div>
+        </section>
+        <section id="hiti" class="hit">
+            <div class="container">
+                <div class="hit__head">
+                    <h2 class="hit__title">Хиты продаж</h2>
+                </div>
+                <div class="hit__container js-hit-container">
+
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="" alt="Мексиканская">
+                            </div>
+                            <div class="product__info">
+                                <div class="product__name">Мексиканская</div>
+                                <div class="product__desc">Томатный соус, пепперони, бекон, острый перец халапеньо, томаты, сыр моцарелла</div>
+                                <div class="product__price-block">
+                                    <div class="product__price">
+                                        <span>от</span>
+                                        <span>560</span>
+                                        <span>₽</span>
+                                    </div>
+                                    <button class="product__add-to-cart js-add-to-cart" data-id="110" data-type="pizza" data-name="Мексиканская" data-price="560">
+                                        <img src="" alt="Купить">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="" alt="Пепперони">
+                            </div>
+                            <div class="product__info">
+                                <div class="product__name">Пепперони</div>
+                                <div class="product__desc">Томатный соус, пепперони, сыр моцарелла</div>
+                                <div class="product__price-block">
+                                    <div class="product__price">
+                                        <span>от</span>
+                                        <span>420</span>
+                                        <span>₽</span>
+                                    </div>
+                                    <button class="product__add-to-cart js-add-to-cart" data-id="102" data-type="pizza" data-name="Пепперони" data-price="420">
+                                        <img src="" alt="Купить">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="" alt="Карбонара">
+                            </div>
+                            <div class="product__info">
+                                <div class="product__name">Карбонара</div>
+                                <div class="product__desc">Сливочный соус, бекон, лук, сыр моцарелла, шампиньоны, томаты</div>
+                                <div class="product__price-block">
+                                    <div class="product__price">
+                                        <span>от</span>
+                                        <span>480</span>
+                                        <span>₽</span>
+                                    </div>
+                                    <button class="product__add-to-cart js-add-to-cart" data-id="105" data-type="pizza" data-name="Карбонара" data-price="480">
+                                        <img src="" alt="Купить">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="" alt="Маргарита">
+                            </div>
+                            <div class="product__info">
+                                <div class="product__name">Маргарита</div>
+                                <div class="product__desc">Томатный соус, сыр моцарелла, томаты</div>
+                                <div class="product__price-block">
+                                    <div class="product__price">
+                                        <span>от</span>
+                                        <span>390</span>
+                                        <span>₽</span>
+                                    </div>
+                                    <button class="product__add-to-cart js-add-to-cart" data-id="101" data-type="pizza" data-name="Маргарита" data-price="390">
+                                        <img src="" alt="Купить">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="" alt="Охотничья">
+                            </div>
+                            <div class="product__info">
+                                <div class="product__name">Охотничья</div>
+                                <div class="product__desc">Томатный соус, охотничьи колбаски, сыр моцарелла, маринованные огурчики</div>
+                                <div class="product__price-block">
+                                    <div class="product__price">
+                                        <span>от</span>
+                                        <span>490</span>
+                                        <span>₽</span>
+                                    </div>
+                                    <button class="product__add-to-cart js-add-to-cart" data-id="104" data-type="pizza" data-name="Охотничья" data-price="490">
+                                        <img src="" alt="Купить">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="" alt="Цезарь">
+                            </div>
+                            <div class="product__info">
+                                <div class="product__name">Цезарь</div>
+                                <div class="product__desc">Сливочный соус, куриное филе, сыр моцарелла, томаты, лист салата</div>
+                                <div class="product__price-block">
+                                    <div class="product__price">
+                                        <span>от</span>
+                                        <span>520</span>
+                                        <span>₽</span>
+                                    </div>
+                                    <button class="product__add-to-cart js-add-to-cart" data-id="106" data-type="pizza" data-name="Цезарь" data-price="520">
+                                        <img src="" alt="Купить">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="cart-block">
+            <div class="cart">
+                <div class="cart__header">
+                    <h3 class="cart__title">Корзина</h3>
+                    <button class="cart__close js-close-cart">
+                        <img src="" alt="Закрыть">
+                    </button>
+                </div>
+                <div class="cart__container js-cart-container">
+                    <div class="cart__empty js-cart-empty">Корзина пуста</div>
+                </div>
+                <div class="cart__footer">
+                    <div class="cart__total">
+                        Итого:
+                        <span class="cart__total-price js-cart-total">0</span>
+                        <span>₽</span>
+                    </div>
+                    <a href="/kosterevo/order/" class="cart__order-btn js-cart-order">Оформить заказ</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <img src="" alt="Пицца Олимп">
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+79997184040" class="footer__phone">+7 (999) 718-40-40</a>
+                    <div class="footer__soc">
+                        <a href="https://vk.com/pizzaolimp33" target="_blank"><img src="" alt="VK"></a>
+                        <a href="https://t.me/pizzaolimp33" target="_blank"><img src="" alt="Telegram"></a>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <p class="footer__text">
+                        &copy; Пицца Олимп, 2024
+                    </p>
+                    <a href="/privacy/" class="footer__link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/app.min.js?v=1709366547"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: transparent;
+}
+
+.main-container {
+    display: block;
+    width: 100%;
+    background-color: #28272b; /* Устанавливаем фон main-container */
+    padding-top: 60px; /* отступ сверху для контента, равный высоте хедера */
+    padding-left: 50px; /* отступ слева для контента, равный ширине левой панели */
+    box-sizing: border-box;
+}
+
+/* Стили для левой панели */
+.category-nav-left {
+    background-color: #414147;
+    padding: 20px;
+    left: 0;
+    position: fixed;
+    height: 200%;
+    width: 230px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #FFFAFA;
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.category-list a:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.menu-page{
+    margin-left: 60px;
+    background-color: #28272b;
+    color: #fff;
+}
+
+.menu-page .container{
+     background-color: transparent;
+}
+
+.menu-title {
+  color: #ED760E;
+}
+
+
+header {
+    background-color: #222226;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.menu-page {
+    padding: 50px;
+    text-align: center;
+    max-width: 85%; /* Ограничиваем ширину .menu-page */
+}
+
+.menu-page h2 {
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: grid   ;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0px; /* расстояние между ячейками */
+    padding: 100px;
+}
+
+.menu-item {
+  text-align: center;
+    background-color: #423f46;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.menu-item-image {
+  max-width: 250px; /* Увеличили максимальную ширину */
+  max-height: 250px;  /* Максимальная высота контейнера */
+   overflow: hidden; /* скрываем все, что выходит за границы контейнера */
+    margin-bottom: 5px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item-image img {
+  max-width: 100%; /* Картинка будет занимать всю доступную ширину */
+  max-height: 100%;
+  border-radius: 5px;
+    object-fit: cover;
+}
+
+.menu-item .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+ .cart-container {
+    position: fixed;
+    top: 80px; /* Отступ сверху от хедера */
+    right: 20px; /* Отступ справа */
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+    z-index: 10;
+    padding: 10px;
+     background: #323037;
+     border-radius: 10px;
+}
+
+.cart-preview{
+       width: 250px;
+        border-radius: 5px;
+}
+ .cart-preview-header{
+     padding: 10px;
+     text-align: center;
+    border-bottom: 1px solid #999;
+ }
+.cart-preview-header p {
+    color: #fff;
+    margin: 0;
+}
+.cart-preview-items {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+}
+ .cart-preview-items::-webkit-scrollbar {
+    width: 5px;
+ }
+ .cart-preview-items::-webkit-scrollbar-thumb {
+    background: #888;
+ }
+ .cart-preview-items p{
+    margin-bottom: 5px;
+    color: #fff;
+ }
+.cart-preview-footer{
+   padding: 10px;
+    border-top: 1px solid #999;
+}
+.cart-preview-footer p{
+     color: #fff;
+}
+
+/* Обновление стилей cart-item */
+.cart-item {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+     color: #333;
+}
+
+.cart-item-image{
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.cart-item-image img{
+    max-width: 100%;
+    max-height: 100%;
+     object-fit: cover;
+}
+.cart-item-details{
+    flex-grow: 1;
+}
+
+.cart-item-controls{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+footer {
+    background-color: #222226;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+    }
+
+.contact {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222226;
+    color: #FFFAFA;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    padding: 5px 0; /* Добавим отступ сверху и снизу к параграфам */
+}
